@@ -1,0 +1,20 @@
+<head>
+    <title>Calculator</title>
+    <script type="text/javascript" src="calc.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<div class = "calculator">
+    <form>
+        <input type="number" id = "firstNumber" name = "firstNumber"/>
+        <div id = "selectedOperator" class = "inline operator">+</div>
+        <input type="number" id = "secondNumber" name="secondNumber"/>
+        <input type="button" value="=" onClick="calculate();"/>
+        <div class="inline" id = "result"></div>
+    </form>
+    <div class = "inline buttons">
+        <button type="button" onClick="switchOperator(this.innerHTML);">+</button>
+        <button type="button" onClick="switchOperator(this.innerHTML);">-</button>
+        <button type="button" onClick="switchOperator(this.innerHTML);">/</button>
+        <button type="button" onClick="switchOperator(this.innerHTML);">*</button>
+    </div>
+</div>

@@ -1,0 +1,13 @@
+.calculator{
+    white-space:nowrap;
+    display: inline-block
+}
+
+.inline{
+    display:inline-block;
+}
+
+.buttons{
+    text-align: center;
+    width: 100%;
+}
