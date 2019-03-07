@@ -7,10 +7,10 @@ public class MarleyChallenge{
         marleyMirkoII(100);
     }
 
-    static void simpleMarleyMirko(int n){
-        String output = "";
+    static void simpleMarleyMirko(int stop){
+        String output;
 
-        for(int i = 1;  i < n; i++){
+        for(int i = 1;  i < stop + 1; i++){
             boolean marley = (i % 3 == 0);
             boolean mirko = (i % 5 == 0);
 
@@ -29,7 +29,7 @@ public class MarleyChallenge{
 
 
     static void marleyMirkoII(int stop){
-        for(int i = 1; i < stop; i++){
+        for(int i = 1; i < stop + 1; i++){
             StringBuilder builder = new StringBuilder();
             if(i % 3 == 0) builder.append(MARLEY);
             if(i % 5 == 0) builder.append(MIRKO);
