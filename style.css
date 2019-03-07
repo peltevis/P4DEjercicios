@@ -1,6 +1,19 @@
+.wrapper{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
 .calculator{
+    border: 2px;
+    border-style: solid;
+    border-color: #000;
+    padding: 9pt;
     white-space:nowrap;
-    display: inline-block
+    display: inline-block;
+    text-align: center;
 }
 
 .inline{
@@ -10,4 +23,11 @@
 .buttons{
     text-align: center;
     width: 100%;
+}
+
+.title{
+    padding: 4pt;
+    padding-top: 0pt;
+    font-size: 20pt;
+    color: #303090;
 }
